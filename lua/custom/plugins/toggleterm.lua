@@ -4,7 +4,7 @@ return {
     version = '*',
     config = function()
       require('toggleterm').setup {
-        open_mapping = [[<c-\>]],
+        open_mapping = [[\\]],
       }
 
       local Terminal = require('toggleterm.terminal').Terminal
