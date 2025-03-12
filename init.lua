@@ -544,6 +544,10 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
+        -- java_language_server = {},
+        jdtls = {},
+        kotlin_language_server = {},
+        bufls = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs

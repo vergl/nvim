@@ -8,14 +8,14 @@ return {
   },
   config = function()
     require('neo-tree').setup {
+      filters = {
+        git_ignored = false,
+      },
       event_handlers = {
 
         {
           event = 'file_opened',
-          handler = function(file_path)
-            -- auto close
-            -- vimc.cmd("Neotree close")
-            -- OR
+          handler = function()
             require('neo-tree.command').execute { action = 'close' }
           end,
         },
