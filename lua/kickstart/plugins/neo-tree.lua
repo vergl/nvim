@@ -9,6 +9,7 @@ return {
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
   },
+  cmd = 'Neotree',
   config = function()
     vim.keymap.set('n', '<leader>E', ':Neotree toggle<CR>', { desc = 'Toggl[E] Neotree' })
     require('neo-tree').setup {
